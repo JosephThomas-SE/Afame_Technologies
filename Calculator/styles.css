@@ -1,0 +1,67 @@
+.calculator {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #ddd; /* Default button color */
+    color: #333; /* Default button text color */
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+/* Operator buttons ( +, -, *, / ) */
+button[data-value="+"],
+button[data-value="-"],
+button[data-value="*"],
+button[data-value="/"] {
+    background-color: #fafafa; /* Lighter background for operators */
+}
+
+/* Equal button (=) */
+button[data-value="="] {
+    background-color: #4CAF50; /* Green background for equal button */
+    color: #fff; /* White text color for equal button */
+}
+
+/* Clear button (C) with hover effect */
+.clear-button {
+    background-color: #4169E1; /* Same default color as other buttons */
+    color: #333; /* Same default text color as other buttons */
+    border-radius: 5px;
+  }
+  
+  /* Hover effect for "C" button to change color to red */
+  .clear-button:hover {
+    background-color: #f00; /* Red background on hover */
+  }

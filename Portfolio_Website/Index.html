@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">My Portfolio</div>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="intro-section">
+    <div class="intro-text">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hi, I'm Joseph Thomas, a Software Engineer.</p>
+    </div>
+  </header>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a Software Engineer, who wants to achieve great hights in life and mostly wants to make my parents happy.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Addant Portfolio</h3>
+        <p>The portfolio for the comapny that i worked in was made using reactJS. This project helped me learn more about the reactJS and styling.</p>
+        <a href="https://github.com/JosephThomas-SE/addant-portfolio" class="btn">View Demo</a>
+      </div>
+      <!-- Add more projects as needed -->
+      <div class="project">
+        <h3>News App Clone</h3>
+        <p>A News App clone using react by using Api calls. Used filtering and single rendering functionality of the reactJS.</p>
+        <a href="https://github.com/JosephThomas-SE/News-App-Clone" class="btn">View Demo</a>
+      </div>
+      <div class="project">
+        <h3>Employee Info System</h3>
+        <p>Employee Info System using DotNet Core functionalities and Firebase app. This app lets you do the CRUD (Create, Read, Update, Delete) operation susing the C# language, the Dot Net Core Framework and Firebase database connection.</p>
+        <a href="https://github.com/JosephThomas-SE/Basic-.net-core-web-app" class="btn">View Demo</a>
+      </div>
+      <div class="project">
+        <h3>Portfolio and Calculator Projects</h3>
+        <p>As a result of the recent internship i got from the Afame Technologies, i have given the task of creating 2 projects on my own. One is a portfolio and the other one was a calculator. Both using HTML, CSS and Js.</p>
+        <a href="https://github.com/JosephThomas-SE/afame-technologies" class="btn">View Demo</a>
+      </div>
+      <div class="project">
+        <h3>SVG Manipulator</h3>
+        <p>This project was a result of my enthusiasm, i have put myslef in the work of developing an app using reactJS, and i came upwith basic stying and functionalities using the reactJS framework.</p>
+        <a href="https://github.com/JosephThomas-SE/svg_manipulator_using_reactJs" class="btn">View Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 My Portfolio</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
